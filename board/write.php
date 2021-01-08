@@ -3,7 +3,7 @@
 
     $idx = $_GET['idx'];
 
-    //mysql보안을 위해 mysqli_real_escape_string()함수를 이용해야된다.
+    //mysql보안을 위해 mysqli_real_escape_string()함수를 이용해 보안에 문제없는지 확인한다.
     $idx = mysqli_real_escape_string($connect,$idx);
 
     $query = "select * from my_board where idx='$idx'";

@@ -9,6 +9,7 @@
     $idx = mysqli_real_escape_string($connect,$idx);
     $pwd = mysqli_real_escape_string($connect,$pwd);
 
+    //query문에서 password로 입력시 알아서 암호화가 진행되서 데이터베이스로 저장
     $query = "select * from my_board where idx='$idx' and pwd=password('$pwd') ";
     $result = mysqli_query($connect, $query);
     $data = mysqli_fetch_array($result);

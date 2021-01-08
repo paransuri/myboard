@@ -18,7 +18,7 @@
         $_SESSION['isLogin'] = time();
 
     ?>
-
+        <!-- 로그인 성공 시 게시판으로 이동하게 한다. -->
         <script>
             location.href='../board/list.php';
         </script>

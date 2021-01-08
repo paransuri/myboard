@@ -7,7 +7,7 @@
     $idx = mysqli_real_escape_string($connect,$idx);
 
 ?>
-
+<!-- 게시물 삭제 요청-->
 <form action="del.php" method="post">
     <input type="hidden" name="idx" value="<?=$idx?>">
     <table width=800 border="1" cellpadding=5 >
